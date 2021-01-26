@@ -14,14 +14,14 @@ layout: default
   {% endif %}
 </header>
 
-{% if site.theme_config.show_experiences == true %}
-  <h2 id="experiences">Experiences</h2>
-  {% include vertical_list.html collection=site.data.home.experience_entries %}
-{% endif %}
-
 {% if site.theme_config.show_projects == true %}
   <h2 id="projects">Projects</h2>
   {% include card_list.html collection=site.data.home.project_entries %}
+{% endif %}
+
+{% if site.theme_config.show_experiences == true %}
+  <h2 id="experiences">Experiences</h2>
+  {% include vertical_list.html collection=site.data.home.experience_entries %}
 {% endif %}
 
 {% if site.theme_config.show_education == true %}
