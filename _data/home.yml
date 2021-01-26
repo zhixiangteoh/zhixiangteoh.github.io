@@ -1,0 +1,189 @@
+navbar_entries:
+  - title: about
+    url: about
+
+  - title: experiences
+    url: "#experiences"
+
+  - title: projects
+    url: "#projects"
+
+  - title: blog
+    url: blog
+
+experience_entries:
+  - title: MLH Open Source Fellow, Major League Hacking
+    url: false
+    entries:
+      - title: Spring 2021 Open Source Program
+        url: false
+      
+      - title: JavaScript / TypeScript & Ruby
+        url: false
+
+  - title: Software Engineering, National University of Singapore
+    url: https://ay2021s1-cs2113-t14-2.github.io/tp/
+    entries:
+      - title: Computer Science module introducing real-world applications of software engineering concepts, in Java
+        url: false
+
+      - title: Applied concepts of abstraction and encapsulation, Java 8 Streams, and unit and integration testing in a team Command Line Interface (CLI) project
+        url: false
+      
+      - title: Wrote 3500/6000 lines of code, including main Game Mode, and 40% of user and developer docs
+        url: https://ay2021s1-cs2113-t14-2.github.io/tp/team/zhixiangteoh.html
+      
+      - title: Managed issues and releases, and authored over 40 PRs in two months
+        url: https://github.com/AY2021S1-CS2113-T14-2/tp/pulls?q=is%3Apr+is%3Aclosed+author%3Azhixiangteoh+
+
+  - title: Teaching Assistant and Peer Tutor, University of Pittsburgh Computing
+    url: false
+    entries:
+      - title: CS 0445 Data Structures and Algorithms I, Timothy Hoffman
+        url: false
+
+      - title: CS 0401 Intermediate Programming using Java, Michael Devine
+        url: false
+        entries:
+          - title: Highest UTA OMETS teaching survey response rate (40%) for Intermediate Programming, with 80% of evaluations at “Strongly Agree” for all questions
+            url: https://www.teohzhixiang.com/resume/assets/pdf/omets_0401_fall2020.pdf
+      
+      - title: Designed material for and engaged students in weekly labs, and hosted individual office hours; 20h/week
+        url: https://drive.google.com/drive/u/0/folders/1rg_ei3SXWZuU_enc-AiNw8wm7HNDQs_7
+
+      - title: Student tutor in the Math Assistance Center and CS Resource Center, up to Linear Algebra and Algorithms
+        url: false
+      
+  - title: Web Developer, TheNewsPanels.com
+    url: https://thenewspanels.com
+    entries:
+      - title: Integrated Jekyll site with Netlify CMS for abstracted third-party creating, updating, and deleting of posts
+        url: https://github.com/zhixiangteoh/thenewspanels-netlify
+
+      - title: More recently migrated website to Wordpress to streamline search engine optimization and automated posting, and include conventional articles
+        url: false
+
+project_entries:
+  - title: Co-Re MERN
+    url: core-post
+    desc: Course Review website built on MERN stack with Redux authentication and Algolia search
+    highlight: WIP
+
+  - title: ML Methods in R
+    url: ml-methods-in-r-post
+    desc: Comparing and analyzing machine learning methods from simple linear regression to support vector machines
+
+  - title: eCardnomics
+    url: ecardnomics-post
+    desc: Team CLI project developed over two months, in which I wrote 3500/6000 lines of code
+
+  - title: Citation Grab
+    url: citation-grab-post
+    desc: Simple web app for fast lookup of Google Scholar citations through SerpApi
+    highlight: WIP
+
+  - title: Monads in Java
+    url: monads-in-java-post
+    desc: Short 10-page report on monads in Java, in which I wrote Java code for monads in the flavor of Haskell
+
+  - title: Pitt Math Club
+    url: pitt-math-club-post
+    desc: Revamping the Pitt Math Club website with React
+    highlight: WIP
+
+old_project_entries:
+  - title: microrequests
+    url: http://www.abhinav.co/microrequests
+    desc: A Python library to consume microservices more efficiently
+
+  - title: blockr
+    url: http://www.abhinav.co/blockr
+    desc: A CLI tool to help you easily block and unblock websites
+
+  - title: moonwalk
+    url: https://github.com/abhinavs/moonwalk
+    desc: A fast and minimalist Jekyll blog theme with clean dark mode
+
+  - title: humangous
+    url: http://www.humangous.co
+    desc: The better people know you, the better they collaborate
+
+  - title: avnee
+    url: http://www.avnee.co
+    desc: New age kids require new ways of parenting
+
+  - title: year progress
+    url: https://year-progress.herokuapp.com/
+    desc: A bot written for slack that shows current year in a progress bar
+    highlight: archived
+
+education_entries:
+  - title: University of Michigan, Ann Arbor MI
+    url: false
+    entries:
+      - title: Expected Dec 2022
+        url: false
+  
+  - title: National University of Singapore, Singapore
+    url: false
+    entries:
+      - title: Aug 2020 - Dec 2020
+        url: false
+
+  - title: University of Pittsburgh, Pittsburgh PA
+    url: false
+    entries:
+      - title: Aug 2019 - Dec 2020
+        url: false
+
+      - title: Honors College; GPA 4.0
+        url: false
+
+footer_entries:
+  - title: resume
+    url: http://zhixiangteoh.github.io/resume
+    icon: fas fa-file
+
+  - title: linkedin
+    url: https://www.linkedin.com/in/zhixiangteoh
+    icon: fab fa-linkedin
+
+  - title: github
+    url: https://github.com/zhixiangteoh
+    icon: fab fa-github
+
+  - title: facebook
+    url: https://facebook.com/teoh.zhixiang
+    icon: fab fa-facebook
+
+misc_entries:
+  - title: this is an example vertical list
+    url: false
+
+  - title: you can show or hide using a boolean flag in _config.yml
+    url: false
+
+  - title: and you can add data in _data/home.yml
+    url: false
+
+  - title: Blog posts
+    post_list: true
+    url: false
+
+  - title: moonwalk on the Internet
+    url: false
+    entries:
+      - title: on Github
+        url: https://github.com/abhinavs/moonwalk
+
+      - title: originally built for abhinav's homepage
+        url: http://www.abhinav.co
+
+      - title: this list is scalable and can be nested
+        url: false
+        entries:
+          - title: this is nested inside a nested list
+            url: false
+
+          - title: it is easy to use, see _data/home.yml to see how to configure it.
+            url: false

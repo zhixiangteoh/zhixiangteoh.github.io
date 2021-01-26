@@ -1,0 +1,8 @@
+<p class="text-bold text-upcase">
+  {% if page.github_link %}
+    <a class="button" style="margin-right: 2em" href="{{ page.github_link }}"><i class="fab fa-github"></i> Source</a>
+  {% endif %}
+  {% if page.demo_link %}
+    <a class="button" href="{{ page.demo_link }}"><i class="fas fa-laptop-code"></i> Demo</a>
+  {% endif %}
+</p>
