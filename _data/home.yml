@@ -141,7 +141,7 @@ education_entries:
 
 footer_entries:
   - title: resume
-    url: http://zhixiangteoh.github.io/resume
+    url: https://zhixiangteoh.github.io/resume
     icon: fas fa-file
 
   - title: linkedin
