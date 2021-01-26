@@ -6,7 +6,7 @@ email: zhixiangteoh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Computer science and mathematics student from Singapore studying at the University of Michigan, Ann Arbor. Currently an MLH open source fellow.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://zhixiangteoh.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: zhixiangteoh
 github_username:  zhixiangteoh
 facebook_username: teoh.zhixiang
