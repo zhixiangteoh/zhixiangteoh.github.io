@@ -4,5 +4,8 @@ vendor
 .jekyll-cache
 .jekyll-metadata
 .sass-cache
+.metals
+.vscode
+.forestry
 _site
 Gemfile.lock
