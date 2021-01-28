@@ -10,6 +10,7 @@ url: "https://zhixiangteoh.github.io/" # the base hostname & protocol for your s
 linkedin_username: zhixiangteoh
 github_username:  zhixiangteoh
 facebook_username: teoh.zhixiang
+twitter_username: zhixiangteoh
 
 permalink: /:slug.html
 
@@ -23,7 +24,6 @@ sass:
 
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
 
 
 # Theme settings
