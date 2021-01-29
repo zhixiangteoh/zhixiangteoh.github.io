@@ -119,24 +119,32 @@ old_project_entries:
 
 education_entries:
   - title: University of Michigan, Ann Arbor MI
+    duration: Expected Dec 2022
     url: false
     entries:
-      - title: Expected Dec 2022
+      - title: Courses
+        description: Programming and Data Structures, Discrete Math, Numerical Methods
         url: false
   
   - title: National University of Singapore, Singapore
+    duration: Aug 2020 - Dec 2020
     url: false
     entries:
-      - title: Aug 2020 - Dec 2020
+      - title: Courses
+        description: Software Engineering, Programming Language Concepts, Theory of Computation, Ordinary Differential Equations
         url: false
 
   - title: University of Pittsburgh, Pittsburgh PA
+    duration: Aug 2019 - Dec 2020
+    footer: Pitt Math Club!
     url: false
     entries:
-      - title: Aug 2019 - Dec 2020
+      - title: Courses
+        description: Computer Organization and Assembly Language, Data Structures, Algorithms, Intro to Machine Learning, Multivariable Calculus, Linear Algebra
         url: false
 
-      - title: Honors College; GPA 4.0
+      - title: Honors College
+        description: GPA 4.0
         url: false
 
 footer_entries:

@@ -8,6 +8,10 @@ layout: default
 {% include project_links.html %}
 {{ content }}
 
+{% if page.timeline_collection %}
+  {% include timeline.html collection_name=page.timeline_collection collection=site.data.home.education_entries %}
+{% endif %}
+
 {% if page.show_footer %}
   {% include footer.html %}
 {% endif%}

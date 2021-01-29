@@ -1,9 +1,10 @@
 ---
 layout: post
-title: About Me
+title: About Me # About Me | Zhixiang Teoh
 permalink: /about/
 show_footer: true
 mathjax: true
+timeline_collection: Education # heading for timeline
 ---
 
 I'm a [Computer Science](https://bulletin.engin.umich.edu/courses/eecs/) and [Mathematics](https://lsa.umich.edu/math/undergraduates/undergraduate-math-courses.html) student from Singapore studying at the University of Michigan, Ann Arbor.
@@ -16,15 +17,3 @@ I'm currently looking for internships, research opportunities, and development p
 
 My favorite quote, that also sums up how I feel about open source software:
 > If I have seen further, it is by standing on the shoulders of giants.
-
-## Education
-
-- [University of Michigan](https://cse.engin.umich.edu/), Ann Arbor MI
-  - Expected Dec 2022
-
-- [National University of Singapore](https://www.comp.nus.edu.sg/), Singapore
-  - Aug 2020 - Dec 2020
-
-- [University of Pittsburgh](https://www.sci.pitt.edu/), Pittsburgh PA
-  - Aug 2019 - Dec 2020
-  - [Honors College](https://www.honorscollege.pitt.edu/); GPA 4.0

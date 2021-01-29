@@ -1,0 +1,118 @@
+.timeline {
+  margin-top: 20px;
+  position: relative;
+}
+
+.timeline:before{
+  position: absolute;
+  content:'';
+  width: 4px;
+  height: calc(100% + 1em);
+  background: var(--highlight);
+  left: 14px;
+  border-radius: 4px;
+}
+
+.timeline-month{
+  position: relative;
+  padding: 4px 15px 4px 40px;
+  background-color: var(--bg-secondary);
+  color: var(--headings);
+  display: inline-block;
+  width: auto;
+  border-radius: 20px;
+  border: 1px solid var(--text);
+  margin-bottom: 30px;
+}
+
+.timeline-month:before{
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: var(--highlight);
+  border-radius: 100%;
+  left: 5px;
+}
+
+.timeline-section {
+  padding-left: 35px;
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-date {
+  margin-bottom: 15px;
+  padding: 2px 15px;
+  background: linear-gradient(var(--bg-secondary), 70%, var(--highlight));
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid var(--highlight);
+  color: var(--headings);
+}
+
+.timeline-section:before{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: var(--highlight);
+  top: 12px;
+  left: 20px;
+}
+
+.timeline-section:after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(var(--bg), var(--highlight));
+  top: 7px;
+  left: 11px;
+  border-radius: 100%;
+}
+
+.row {
+  width: 80%;
+}
+
+.timeline-box {
+  position:relative;
+  
+  background-color: var(--bg-secondary);
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid var(--text);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.box-title {
+  padding: 5px 15px;
+  border-bottom: 1px solid var(--text);
+}
+
+.box-content {
+  padding: 5px 15px;
+  background-color: var(--bg);
+}
+
+.box-content i {
+  color: var(--code-text);
+  margin-right: 5px;
+}
+
+.box-item {
+  margin-bottom:5px;
+}
+
+.box-footer {
+  padding: 5px 15px;
+  border-top: 1px solid var(--text);
+  background-color: var(--bg-secondary);
+  text-align: right;
+  font-style: italic;
+}

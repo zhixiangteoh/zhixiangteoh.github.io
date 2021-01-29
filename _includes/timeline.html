@@ -1,0 +1,32 @@
+{% if include.collection_name %}
+<div class="timeline">
+  <div class="timeline-month">
+    {{ include.collection_name }}
+  </div>
+  {% for item in include.collection %}
+    <div class="timeline-section">
+      <div class="timeline-date">{{ item.duration }}</div>
+      <div class="row">
+        <div class="timeline-box">
+          <div class="box-title">{{ item.title }}</div>
+          <div class="box-content">
+            {% if item.cta %}
+              <a href="" class="btn">{{ item.cta }}</a>
+            {% endif %}
+
+            {% for entry in item.entries %}
+              <div class="box-item">
+                <i>{{ entry.title }}</i>: {{ entry.description }}
+              </div>
+            {% endfor %}  
+          </div>
+
+          {% if item.footer %}
+            <div class="box-footer">{{ item.footer }}</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}
