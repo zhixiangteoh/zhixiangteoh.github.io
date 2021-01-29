@@ -3,6 +3,7 @@ layout: post
 title: About Me
 permalink: /about/
 show_footer: true
+mathjax: true
 ---
 
 I'm a [Computer Science](https://bulletin.engin.umich.edu/courses/eecs/) and [Mathematics](https://lsa.umich.edu/math/undergraduates/undergraduate-math-courses.html) student from Singapore studying at the University of Michigan, Ann Arbor.
