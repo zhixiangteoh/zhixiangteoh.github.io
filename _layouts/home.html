@@ -21,7 +21,7 @@ layout: default
 
 {% if site.theme_config.show_experiences == true %}
   <h2 id="experiences">Experiences</h2>
-  {% include vertical_list.html collection=site.data.home.experience_entries %}
+  {% include timeline.html collection_name=page.timeline_collection collection=site.data.home.experience_entries %}
 {% endif %}
 
 {% if site.theme_config.show_education == true %}

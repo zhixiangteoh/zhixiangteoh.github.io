@@ -13,54 +13,70 @@ navbar_entries:
 
 experience_entries:
   - title: MLH Open Source Fellow, Major League Hacking
+    duration: Jan 2021 - Present
     url: false
     entries:
-      - title: Spring 2021 Open Source Program
+      - title: Open Source Program
+        description: Spring 2021
         url: false
       
-      - title: JavaScript / TypeScript & Ruby
+      - description: JavaScript / TypeScript & Ruby
         url: false
 
   - title: Software Engineering, National University of Singapore
+    duration: Aug 2020 - Dec 2020
     url: https://ay2021s1-cs2113-t14-2.github.io/tp/
     entries:
-      - title: Computer Science module introducing real-world applications of software engineering concepts, in Java
+      - title: Computer Science module
+        description: introducing real-world applications of software engineering concepts, in Java
         url: false
 
-      - title: Applied concepts of abstraction and encapsulation, Java 8 Streams, and unit and integration testing in a team Command Line Interface (CLI) project
+      - title: Team Command Line Interface (CLI) project
+        description: that applies OOP concepts like abstraction and encapsulation, Java 8 Streams, and unit and integration testing
         url: false
       
-      - title: Wrote 3500/6000 lines of code, including main Game Mode, and 40% of user and developer docs
+      - title: Wrote 3500/6000 lines of code
+        description: including main Game Mode, and 40% of user and developer docs
         url: https://ay2021s1-cs2113-t14-2.github.io/tp/team/zhixiangteoh.html
       
-      - title: Managed issues and releases, and authored over 40 PRs in two months
+      - title: Managed issues and releases
+        description: and authored over 40 PRs in two months
         url: https://github.com/AY2021S1-CS2113-T14-2/tp/pulls?q=is%3Apr+is%3Aclosed+author%3Azhixiangteoh+
 
   - title: Teaching Assistant and Peer Tutor, University of Pittsburgh Computing
+    duration: Jan 2020 - Dec 2020
     url: false
     entries:
-      - title: CS 0445 Data Structures and Algorithms I, Timothy Hoffman
+      - title: CS 0445 Data Structures and Algorithms I
+        description: Timothy Hoffman
         url: false
 
-      - title: CS 0401 Intermediate Programming using Java, Michael Devine
+      - title: CS 0401 Intermediate Programming using Java
+        description: Michael Devine
         url: false
         entries:
-          - title: Highest UTA OMETS teaching survey response rate (40%) for Intermediate Programming, with 80% of evaluations at “Strongly Agree” for all questions
+          - title: UTA OMETS teaching survey 
+            description: Highest response rate (40%) for Intermediate Programming, with 80% of evaluations at “Strongly Agree” for all questions
             url: https://www.teohzhixiang.com/resume/assets/pdf/omets_0401_fall2020.pdf
       
-      - title: Designed material for and engaged students in weekly labs, and hosted individual office hours; 20h/week
+      - title: Labs and office hours 
+        description: Designed material for labs, and engaged students in labs and office hours; 20h/week
         url: https://drive.google.com/drive/u/0/folders/1rg_ei3SXWZuU_enc-AiNw8wm7HNDQs_7
 
-      - title: Student tutor in the Math Assistance Center and CS Resource Center, up to Linear Algebra and Algorithms
+      - title: Student tutor 
+        description: in the Math Assistance Center and CS Resource Center, up to Linear Algebra and Algorithms
         url: false
       
   - title: Web Developer, TheNewsPanels.com
+    duration: Sep 2019 - May 2020
     url: https://thenewspanels.com
     entries:
-      - title: Integrated Jekyll site with Netlify CMS for abstracted third-party creating, updating, and deleting of posts
+      - title: Integrated Jekyll site with Netlify CMS
+        description: to abstract creating, updating, and deleting of posts
         url: https://github.com/zhixiangteoh/thenewspanels-netlify
 
-      - title: More recently migrated website to Wordpress to streamline search engine optimization and automated posting, and include conventional articles
+      - title: Migrated website to Wordpress 
+        description: to Wordpress to streamline search engine optimization and automated posting, and include conventional textual articles
         url: false
 
 project_entries:
@@ -165,33 +181,4 @@ footer_entries:
     icon: fab fa-facebook
 
 misc_entries:
-  - title: this is an example vertical list
-    url: false
-
-  - title: you can show or hide using a boolean flag in _config.yml
-    url: false
-
-  - title: and you can add data in _data/home.yml
-    url: false
-
-  - title: Blog posts
-    post_list: true
-    url: false
-
-  - title: moonwalk on the Internet
-    url: false
-    entries:
-      - title: on Github
-        url: https://github.com/abhinavs/moonwalk
-
-      - title: originally built for abhinav's homepage
-        url: http://www.abhinav.co
-
-      - title: this list is scalable and can be nested
-        url: false
-        entries:
-          - title: this is nested inside a nested list
-            url: false
-
-          - title: it is easy to use, see _data/home.yml to see how to configure it.
-            url: false
+  - title: example

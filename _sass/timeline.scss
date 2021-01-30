@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.timeline:before{
+.timeline:before {
   position: absolute;
   content:'';
   width: 4px;
@@ -13,7 +13,7 @@
   border-radius: 4px;
 }
 
-.timeline-month{
+.timeline-heading {
   position: relative;
   padding: 4px 15px 4px 40px;
   background-color: var(--bg-secondary);
@@ -25,7 +25,7 @@
   margin-bottom: 30px;
 }
 
-.timeline-month:before{
+.timeline-heading:before {
   position: absolute;
   content: '';
   width: 25px;
@@ -45,15 +45,22 @@
 .timeline-date {
   margin-bottom: 15px;
   padding: 2px 15px;
-  background: linear-gradient(var(--bg-secondary), 70%, var(--highlight));
+  // background: linear-gradient(var(--bg-secondary), 70%, var(--highlight));
+  background: var(--highlight);
   position: relative;
   display: inline-block;
   border-radius: 10px;
   border: 1px solid var(--highlight);
-  color: var(--headings);
+  color: var(--text);
 }
 
-.timeline-section:before{
+html[data-theme="dark"] {
+  .timeline-date {
+    color: var(--bg);
+  }
+}
+
+.timeline-section:before {
   content: '';
   position: absolute;
   width: 30px;
@@ -63,7 +70,7 @@
   left: 20px;
 }
 
-.timeline-section:after{
+.timeline-section:after {
   content: '';
   position: absolute;
   width: 10px;
@@ -106,7 +113,19 @@
 }
 
 .box-item {
-  margin-bottom:5px;
+  margin-bottom: 5px;
+}
+
+.nested-box-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background: var(--bg-secondary);
+
+  i {
+    color: var(--links);
+  }
 }
 
 .box-footer {

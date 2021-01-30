@@ -1,6 +1,6 @@
 {% if include.collection_name %}
 <div class="timeline">
-  <div class="timeline-month">
+  <div class="timeline-heading">
     {{ include.collection_name }}
   </div>
   {% for item in include.collection %}
@@ -8,15 +8,32 @@
       <div class="timeline-date">{{ item.duration }}</div>
       <div class="row">
         <div class="timeline-box">
-          <div class="box-title">{{ item.title }}</div>
+          <div class="box-title">
+            {{ item.title }}
+            {% if item.url %}
+              <a href="{{ item.url }}"><i class="fas fa-link"></i></a>
+            {% endif %}
+          </div>
           <div class="box-content">
             {% if item.cta %}
-              <a href="" class="btn">{{ item.cta }}</a>
+              <a href="" class="">{{ item.cta }}</a>
             {% endif %}
 
             {% for entry in item.entries %}
               <div class="box-item">
-                <i>{{ entry.title }}</i>: {{ entry.description }}
+                <i>{{ entry.title }}</i> {{ entry.description }}
+                {% if entry.url %} 
+                  <a href="{{ entry.url }}"><i class="fas fa-link"></i></a>
+                {% endif %}
+                
+                {% for nested_entry in entry.entries %}
+                  <div class="nested-box-item">
+                    <i>{{ nested_entry.title }}</i> {{ nested_entry.description }}
+                    {% if nested_entry.url %}
+                      <a href="{{ nested_entry.url }}"><i class="fas fa-link"></i></a>
+                    {% endif %}
+                  </div>
+                {% endfor %}
               </div>
             {% endfor %}  
           </div>
