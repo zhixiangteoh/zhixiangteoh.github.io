@@ -10,6 +10,7 @@
         tagsSelected.forEach(tagSelected => {
           document.getElementById(tagSelected).style.background = "";
         });
+        tagsSelected = [];
         let id = 0;
         {% for post in site.posts %}
           var tags = {{ post.tags | jsonify }};
