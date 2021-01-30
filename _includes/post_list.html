@@ -16,10 +16,9 @@
           var tags = {{ post.tags | jsonify }};
 
           var postDiv = document.getElementById(++id);
-          button.style.background = "var(--highlight)";
           postDiv.style.display = "";
         {% endfor %}
-        document.getElementById("Reset").style.background = "";
+        button.style.background = "";
 
         // console.log(tagsSelected);
         return;
