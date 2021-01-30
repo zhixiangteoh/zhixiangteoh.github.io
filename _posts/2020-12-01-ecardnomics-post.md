@@ -4,6 +4,12 @@ layout: post
 show_footer: true
 github_link: https://github.com/AY2021S1-CS2113-T14-2/tp/releases
 demo_link: https://ay2021s1-cs2113-t14-2.github.io/tp/
+tags:
+  - Java
+  - OOP
+  - Team
+  - CLI
+  - Docs
 ---
 
 eCardnomics is a **desktop flashcard application to quickly create, manage, and access new flashcards via a Command Line Interface (CLI)**. eCardnomics is targeted at economics students in Junior College in Singapore, and aims to enhance students’ study experience as an efficient and handy aid for active recall.

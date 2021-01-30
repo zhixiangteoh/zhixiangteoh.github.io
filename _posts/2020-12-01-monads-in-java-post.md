@@ -4,6 +4,15 @@ layout: post
 show_footer: true
 github_link: https://github.com/zhixiangteoh/java-monads-report
 demo_link: https://github.com/zhixiangteoh/java-monads-report/blob/main/Monads%20for%20the%20Java%20developer%20-%20Report.pdf
+tags:
+    - Programming Languages
+    - Functional Programming
+    - Research
+    - Haskell
+    - Java
+    - Monads
+    - Type Theory
+    - Team
 ---
 
 Fourth and final research project of the National University of Singapore (NUS) Computer Science module [Programming Language Concepts](https://nusmods.com/modules/CS2104/programming-language-concepts).

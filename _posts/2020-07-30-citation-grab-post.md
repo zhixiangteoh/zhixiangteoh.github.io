@@ -5,6 +5,12 @@ show_footer: true
 highlight: Work In Progress
 github_link: https://github.com/zhixiangteoh/citation-grab
 demo_link: https://zhixiangteoh.github.io/citation-grab
+tags:
+    - Web
+    - Google Scholar
+    - SerpAPI
+    - React
+    - JavaScript
 ---
 
 Simple frontend web application that makes requests to the third-party [SerpApi](https://serpapi.com/google-scholar-cite-api) endpoint to retrieve Google Scholar citations. Made with React.

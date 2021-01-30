@@ -1,11 +1,88 @@
 {% if site.posts.size > 0 %}
+  <script type="text/javascript">
+    var tagsSelected = [];
+
+    function filterByTag(tag) {
+      // clear filter cues
+      button = document.getElementById(tag);
+
+      if (tag == "Reset") {
+        tagsSelected.forEach(tagSelected => {
+          document.getElementById(tagSelected).style.background = "";
+        });
+        let id = 0;
+        {% for post in site.posts %}
+          var tags = {{ post.tags | jsonify }};
+
+          var postDiv = document.getElementById(++id);
+          button.style.background = "var(--highlight)";
+          postDiv.style.display = "";
+        {% endfor %}
+        document.getElementById("Reset").style.background = "";
+
+        // console.log(tagsSelected);
+        return;
+      }
+
+      if (tagsSelected.includes(tag)) {
+        // unfilter
+        const indexToRemove = tagsSelected.indexOf(tag);
+        tagsSelected.splice(indexToRemove, 1);
+
+        let id = 0;
+        {% for post in site.posts %}
+          var tags = {{ post.tags | jsonify }};
+
+          var postDiv = document.getElementById(++id);
+          postDiv.style.display = 
+            ( tagsSelected.length == 0 || tagsSelected.includes("All") || tagsSelected.some(tagSelected => tags.includes(tagSelected)) ) ? "" : "none";
+        {% endfor %}
+
+        button.style.background = "";
+
+        // console.log(tagsSelected);
+        return;
+      }
+
+      tagsSelected.push(tag);
+      let id = 0;
+      {% for post in site.posts %}
+        var tags = {{ post.tags | jsonify }};
+
+        var postDiv = document.getElementById(++id);
+        button.style.background = "var(--highlight)";
+        postDiv.style.display = 
+          ( tagsSelected.length == 0 || tagsSelected.includes("All") || tagsSelected.some(tagSelected => tags.includes(tagSelected)) ) ? "" : "none";
+      {% endfor %}
+
+      // console.log(tagsSelected);
+    }
+  </script>
+
+  <button id="All" class="button" onclick="filterByTag('All')">Show All</button>
+
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+    {% assign t = tag | first %}
+    <button id="{{ t }}" class="button" onclick="filterByTag(this.id)">
+      {{ t }}
+    </button>
+  {% endfor %}
+
+  <button id="Reset" class="button" onclick="filterByTag('Reset')">Reset</button>
+
+  {% assign id = 0 %}
   <ul>
     {% for post in site.posts %}
-      <li class="post-list-item">
+      {% assign id = id | plus:1 %}
+      <li class="post-list-item" id="{{ id }}">
         <span class="home-date">
           {{ post.date | date: site.theme_config.date_format }}»
         </span>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% for tag in post.tags %}
+          <mark>{{ tag }}</mark>
+        {% endfor %}
       </li>
     {% endfor %}
   </ul>

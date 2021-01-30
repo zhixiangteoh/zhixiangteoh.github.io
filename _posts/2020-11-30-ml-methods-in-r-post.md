@@ -3,6 +3,11 @@ title: Machine Learning Methods in R
 layout: post
 show_footer: true
 github_link: https://github.com/zhixiangteoh/machine-learning-methods-in-r
+tags: 
+  - Machine Learning
+  - R
+  - Statistics
+  - Data Analysis
 ---
 
 An almost comprehensive project comparing and analyzing basic machine learning methods, from simple linear regression to support vector machines and random forest, on a moderate-size construction raw materials dataset with 12 continuous inputs and two discrete inputs.

@@ -5,6 +5,12 @@ show_footer: true
 highlight: Work In Progress
 github_link: https://github.com/zhixiangteoh/pitt-math-club
 demo_link: https://zhixiangteoh.github.io/pitt-math-club
+tags:
+    - Web
+    - React
+    - JavaScript
+    - Prototyping
+    - Figma
 ---
 
 In the process of revamping the current **University of Pittsburgh Math Club website** from [this](http://www.pitt.edu/~sorc/mathclub/) to [this](https://zhixiangteoh.github.io/pitt-math-club).
