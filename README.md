@@ -1,6 +1,6 @@
 # teohzhixiang.com
 
-My personal website.
+My personal website: https://zhixiangteoh.github.io or https://teohzhixiang.com
 
 ## Attributions
 
