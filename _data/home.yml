@@ -12,15 +12,20 @@ navbar_entries:
     url: blog
 
 experience_entries:
-  - title: MLH Open Source Fellow, Major League Hacking
+  - title: MLH Open Source Fellow - WebXR, Major League Hacking
     duration: Jan 2021 - Present
-    url: false
+    url: https://github.com/MLH-Fellowship/webxr-samples
     entries:
-      - title: Open Source Program
+      - title: Open Source Program, JavaScript
         description: Spring 2021
         url: false
       
-      - description: JavaScript / TypeScript & Ruby
+      - title: Contributing to WebXR project
+        description: building immersive WebXR video experiences using three.js rendering library and the new Media Layers API
+        url: https://immersive-web.github.io/layers/#videolayer
+
+      - title: Extend samples to support different types of media
+        description: including 2D, 180/360-degree mono and stereo
         url: false
 
   - title: Software Engineering, National University of Singapore
@@ -80,14 +85,14 @@ experience_entries:
         url: false
 
 project_entries:
+  - title: SlateVim
+    url: slatevim-post
+    desc: An online collaborative Vim document editor built with Slate.js and AWS Amplify
+
   - title: Co-Re MERN
     url: core-post
     desc: Course Review website built on MERN stack with Redux authentication and Algolia search
     highlight: WIP
-
-  - title: ML Methods in R
-    url: ml-methods-in-r-post
-    desc: Comparing and analyzing machine learning methods from simple linear regression to support vector machines
 
   - title: eCardnomics
     url: ecardnomics-post
@@ -106,32 +111,6 @@ project_entries:
     url: pitt-math-club-post
     desc: Revamping the Pitt Math Club website with React
     highlight: WIP
-
-old_project_entries:
-  - title: microrequests
-    url: http://www.abhinav.co/microrequests
-    desc: A Python library to consume microservices more efficiently
-
-  - title: blockr
-    url: http://www.abhinav.co/blockr
-    desc: A CLI tool to help you easily block and unblock websites
-
-  - title: moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
-
-  - title: humangous
-    url: http://www.humangous.co
-    desc: The better people know you, the better they collaborate
-
-  - title: avnee
-    url: http://www.avnee.co
-    desc: New age kids require new ways of parenting
-
-  - title: year progress
-    url: https://year-progress.herokuapp.com/
-    desc: A bot written for slack that shows current year in a progress bar
-    highlight: archived
 
 education_entries:
   - title: University of Michigan, Ann Arbor MI
