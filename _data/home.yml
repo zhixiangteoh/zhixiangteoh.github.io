@@ -103,14 +103,17 @@ project_entries:
     desc: Simple web app for fast lookup of Google Scholar citations through SerpApi
     highlight: WIP
 
+  - title: Retrospective Tracker
+    url: retrospective-tracker-post
+    desc: Browser extension to conveniently create and track weekly retrospectives for the MLH Fellowship.
+
   - title: Monads in Java
     url: monads-in-java-post
     desc: Short 10-page report on monads in Java, in which I wrote Java code for monads in the flavor of Haskell
-
-  - title: Pitt Math Club
-    url: pitt-math-club-post
-    desc: Revamping the Pitt Math Club website with React
-    highlight: WIP
+  # - title: Pitt Math Club
+  #   url: pitt-math-club-post
+  #   desc: Revamping the Pitt Math Club website with React
+  #   highlight: WIP
 
 education_entries:
   - title: University of Michigan, Ann Arbor MI
