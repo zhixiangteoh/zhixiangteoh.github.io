@@ -193,7 +193,7 @@ p code, li code {
   text-align: center;
   text-transform: uppercase;
   
-  &:hover, &:focus {
+  &:hover {
     color: var(--text-secondary);
     box-shadow: 0 0 40px 40px var(--highlight) inset;
   }

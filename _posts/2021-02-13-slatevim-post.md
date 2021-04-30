@@ -14,6 +14,7 @@ tags:
   - SlateJS
   - Team
   - Award-winner
+  - Competition
   - Hackathon
   - MLH
 ---
