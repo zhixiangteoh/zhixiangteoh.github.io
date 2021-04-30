@@ -14,7 +14,7 @@
     {% endif %}
 
     {% if site.theme_config.show_soopr %}
-      <script src="{{ site.theme_config.soopr_base_url }}/soopr.js" ></script>
+      <script data-soopr-token="{{site.theme_config.soopr_token}}" src="{{ site.theme_config.soopr_base_url }}/soopr.js" ></script>
     {% endif %}
   </body>
 </html>
