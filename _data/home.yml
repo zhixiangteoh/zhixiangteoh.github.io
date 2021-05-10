@@ -12,8 +12,15 @@ navbar_entries:
     url: blog
 
 experience_entries:
+  - title: Site Reliability Engineering (SRE) Software Engineer Intern, Benefitfocus
+    duration: May 2021 - Aug 2021
+    url: https://www.benefitfocus.com/
+    entries:
+      - title: Development Operations (DevOps)
+        description: writing deployment scripts, automation tasks for continuous integration and delivery (CI/CD)
+        url: false
   - title: MLH Open Source Fellow - WebXR, Major League Hacking
-    duration: Jan 2021 - Present
+    duration: Jan 2021 - Apr 2021
     url: https://github.com/MLH-Fellowship/webxr-samples
     entries:
       - title: Open Source Program, JavaScript
