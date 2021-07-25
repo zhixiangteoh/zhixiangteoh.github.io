@@ -12,6 +12,7 @@ tags:
     - Web
     - Extension
     - Award-winner
+    - Frontend
 ---
 
 <span style="color: red">Page under development! Please check out the source link.</span>
