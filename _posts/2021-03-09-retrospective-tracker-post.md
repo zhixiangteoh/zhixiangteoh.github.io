@@ -32,3 +32,7 @@ and share these insights with the team.
 Our team thought that the current process of only thinking up the various greens, yellows, reds during Friday's standup meetings in the short time frame of 5-7 minutes was limiting. In that short duration, it was not really possible to undergo deep reflection and introspection. More often than not, it was also difficult to recall what had occurred in the past week, and distil the most important insights from the week into bite-sized notes. 
 
 For our [halfway hackathon](https://fellowship-halfway-batch-2.devpost.com/) project, we decided to streamline this process by creating a simple tool that would allow fellows to create and modify notes as they progressed throughout the week, both improving the process of reflection, as well as shifting the time spent on Fridays from time spent thinking up retrospectives to time spent actually discussing them.
+
+## Demo
+
+[This is a link](https://www.youtube.com/watch?v=lMLBuzLbj9Y&ab_channel=SaydAgzamkhodjaev) to the project demo video submitted for the hackathon.
