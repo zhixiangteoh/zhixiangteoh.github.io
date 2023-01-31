@@ -12,8 +12,35 @@ navbar_entries:
     url: blog
 
 experience_entries:
+  - title: Graduate Student Instructor - Foundations of CS, University of Michigan College of Engineering
+    duration: Jan 2023 - Present
+    url: https://eecs376.org
+    entries:
+      - title: Graduate teaching assistant
+        description: for the same class that I was an instructional aide for during my undergraduate degree. Greater administrative responsibilities and 20 hours per week.
+        url: false
+
+  - title: Software Engineer Intern, Google
+    duration: May 2022 - August 2022
+    url: false
+    entries:
+      - title: Smart text selection and entity detection
+        description: for Chrome on iOS, Chrome Intelligence team
+        url: false
+
+  - title: Instructional Aide - Foundations of CS, University of Michigan College of Engineering
+    duration: Jan 2022 - Dec 2022
+    url: https://eecs376.org
+    entries:
+      - title: Teaching assistant
+        description: for class of 700 students, on complexity classes, algorithm design, dynamic programming, automata, Turing Machines, computability, Turing and polynomial time reductions, and cryptography
+        url: false
+      - title: Responsibilities include
+        description: leading discussion sections, hosting individual office hours, writing and evaluting homework and exam questions, and administrative duties
+        url: false
+
   - title: Backend Engineer Intern, Pop Social Inc.
-    duration: May 2021 - Present
+    duration: May 2021 - May 2022
     url: https://popsocial.app/
     entries:
       - title: Increase test code coverage
@@ -96,14 +123,6 @@ experience_entries:
         description: in the Math Assistance Center and CS Resource Center, up to Linear Algebra and Algorithms
         url: false
 
-  - title: Web Developer, TheNewsPanels.com
-    duration: Sep 2019 - May 2020
-    url: https://thenewspanels.com
-    entries:
-      - title: Integrated Jekyll site with Netlify CMS
-        description: to abstract creating, updating, and deleting of posts
-        url: https://github.com/zhixiangteoh/thenewspanels-netlify
-
 project_entries:
   - title: Hazel
     url: hazel-post
@@ -132,11 +151,21 @@ project_entries:
 
 education_entries:
   - title: University of Michigan, Ann Arbor MI
-    duration: Expected Apr 2023
+    duration: Expected Dec 2023
+    url: false
+    entries:
+      - title: Courses
+        description: Design and Analysis of Algorithms, Advanced Compilers
+        url: false
+  - title: University of Michigan, Ann Arbor MI
+    duration: Jan 2021 - Dec 2022
     url: false
     entries:
       - title: Courses
         description: Programming and Data Structures, Discrete Math, Numerical Methods
+        url: false
+      - title: Summa Cum Laude
+        description: GPA 3.94
         url: false
 
   - title: National University of Singapore, Singapore
