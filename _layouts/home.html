@@ -19,8 +19,8 @@ layout: default
 {% include card_list.html collection=site.data.home.project_entries %} {% endif
 %} {% if site.theme_config.show_experiences == true %}
 <h2 id="experiences">Experiences</h2>
-{% include timeline.html collection_name=page.timeline_collection
-collection=site.data.home.experience_entries %} {% endif %}
+{% include vertical_list.html collection=site.data.home.experience_entries %} {%
+endif %}
 
 <!-- {% if site.theme_config.show_education == true %}
   <h2 id="education">Education</h2>
