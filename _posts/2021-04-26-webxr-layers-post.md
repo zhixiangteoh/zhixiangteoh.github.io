@@ -3,20 +3,22 @@ title: WebXR Layers Samples
 layout: post
 show_footer: true
 permalink: /webxr-layers-post
-github_link: https://github.com/und3fined-v01d/webxr-layers/tree/docs
-tags: 
-    - Open Source
-    - MLH
-    - Team
-    - JavaScript
-    - Web
-    - Mixed Reality
-    - Internship
+github_link: https://github.com/sovoid/webxr-layers/tree/docs
+tags:
+  - Open Source
+  - MLH
+  - Team
+  - JavaScript
+  - Web
+  - Mixed Reality
+  - Internship
 ---
 
 This project is a product of an [Major League Hacking (MLH) Spring 2021 Fellowship](https://fellowship.mlh.io/) open source contribution!
 
 [Composition of WebXR layers](https://www.w3.org/TR/webxrlayers-1/#intro) has significant benefits. This application is a small collection of samples that demonstrate creating and interacting with video layers in an XR environment. Because video layers cannot be interacted with directly via a controller, a 3D rendering library is used to achieve the desired interactions, including video playback controls, and moving and resizing layers. For this project, we chose to use [Three.js](https://threejs.org/) as our main 3D rendering library.
+
+For a more comprehensive discussion, check out our official [documentation](https://github.com/sovoid/webxr-layers/tree/docs).
 
 ## Media
 

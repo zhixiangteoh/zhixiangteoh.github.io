@@ -3,7 +3,7 @@ title: Monads for the Java developer
 layout: post
 show_footer: true
 github_link: https://github.com/zhixiangteoh/java-monads-report
-demo_link: https://github.com/zhixiangteoh/java-monads-report/blob/main/Monads%20for%20the%20Java%20developer%20-%20Report.pdf
+doc_link: https://github.com/zhixiangteoh/java-monads-report/blob/main/Monads%20for%20the%20Java%20developer%20-%20Report.pdf
 tags:
   - Programming Languages
   - Functional Programming
@@ -26,7 +26,7 @@ Together with two other peers, we wrote a [short 10-page report](https://github.
 ```java
 /**
  * This is a Maybe class written in the flavor of the Maybe monad in Haskell. This Maybe class is
- * discussed in my Monads for the Java developer Term Paper for CS2104 (NUS Semester 1 2020-2021), 
+ * discussed in my Monads for the Java developer Term Paper for CS2104 (NUS Semester 1 2020-2021),
  * written along with my teammates Ryan Tay and Ye Guoquan.
  */
 
@@ -56,11 +56,11 @@ class Maybe<A> {
     public static void main(String[] args) {
         Maybe<Integer> a = Maybe.unit(3);
         Maybe<Integer> b = Maybe.unit(null);
-        
-        Maybe<Integer> sum = 
-            a.bind(val1 -> 
-            b.bind(val2 -> 
-            Maybe.unit(val1 + val2)  
+
+        Maybe<Integer> sum =
+            a.bind(val1 ->
+            b.bind(val2 ->
+            Maybe.unit(val1 + val2)
         ));
 
         System.out.println(sum); // Nothing
@@ -74,12 +74,12 @@ class Maybe<A> {
 
 ```java
 /**
- * Andrés Castaño. 2016. Monads for Java developers, Part 2. (November 2016). 
- * Retrieved November 6, 2020, from 
+ * Andrés Castaño. 2016. Monads for Java developers, Part 2. (November 2016).
+ * Retrieved November 6, 2020, from
  * https://medium.com/@afcastano/monads-for-java-developers-part-2-the-result-and-log-monads-a9ecc0f231bb
- * 
+ *
  * ResultTest.java, along with Result.java, was referenced to devise the 2-parametrized Either<E, A> class,
- * discussed in my Monads for the Java developer Term Paper for CS2104 (NUS Semester 1 2020-2021), 
+ * discussed in my Monads for the Java developer Term Paper for CS2104 (NUS Semester 1 2020-2021),
  * written along with my teammates Ryan Tay and Ye Guoquan.
  */
 
@@ -89,7 +89,7 @@ import java.util.Optional;
 public class Either<E, A> {
     private Optional<E> error;
     private Optional<A> a;
-    
+
     private Either(E error, A a) {
         this.error = Optional.ofNullable(error);
         this.a     = Optional.ofNullable(a);
@@ -116,12 +116,12 @@ Testing the `Either` class:
 
 ```java
 /**
- * Andrés Castaño. 2016. Monads for Java developers, Part 2. (November 2016). 
- * Retrieved November 6, 2020, from 
+ * Andrés Castaño. 2016. Monads for Java developers, Part 2. (November 2016).
+ * Retrieved November 6, 2020, from
  * https://medium.com/@afcastano/monads-for-java-developers-part-2-the-result-and-log-monads-a9ecc0f231bb
- * 
+ *
  * ResultTest.java, along with Result.java, was referenced to devise the 2-parametrized Either<E, A> class,
- * discussed in my Monads for the Java developer Term Paper for CS2104 (NUS Semester 1 2020-2021), 
+ * discussed in my Monads for the Java developer Term Paper for CS2104 (NUS Semester 1 2020-2021),
  * written along with my teammates Ryan Tay and Ye Guoquan.
  */
 
@@ -130,16 +130,16 @@ public class EitherTest {
         Either<Exception, Integer> a = either(3);
         Either<Exception, Integer> b = either(5);
         Either<Exception, Integer> c = either(null);
-    
-        Either<Exception, Integer> sum = 
-            a.bind(e1 -> 
-            b.bind(e2 -> 
+
+        Either<Exception, Integer> sum =
+            a.bind(e1 ->
+            b.bind(e2 ->
             either(e1 + e2)
         ));
 
-        Either<Exception, Integer> sum1 = 
-            a.bind(e1 -> 
-            c.bind(e2 -> 
+        Either<Exception, Integer> sum1 =
+            a.bind(e1 ->
+            c.bind(e2 ->
             either(e1 + e2)
         ));
 
@@ -159,7 +159,7 @@ Testing conformity of the [Java 8 `Optional`](https://docs.oracle.com/javase/8/d
 ```java
 // Associativity
 /**
- * This test for conformity to the Monad law of Associativity is discussed in my Monads for the Java developer 
+ * This test for conformity to the Monad law of Associativity is discussed in my Monads for the Java developer
  * Term Paper for CS2104 (NUS Semester 1 2020-2021), written along with my teammates Ryan Tay and Ye Guoquan.
  */
 
@@ -183,12 +183,12 @@ public class OptionalTestAssociativity {
 ```java
 // Left Identity
 /**
- * Marcello La Rocca. 2016. How Optional Breaks the Monad Laws and Why It Matters. (September 2016). 
+ * Marcello La Rocca. 2016. How Optional Breaks the Monad Laws and Why It Matters. (September 2016).
  * Retrieved November 6, 2020 from https://www.sitepoint.com/how-optional-breaks-the-monad-laws-and-why-it-matters/
- * 
+ *
  * This code is referenced from Marcello La Rocca's sitepoint article.
- * 
- * This test for conformity to the Monad law of Left Identity is discussed in my Monads for the Java developer 
+ *
+ * This test for conformity to the Monad law of Left Identity is discussed in my Monads for the Java developer
  * Term Paper for CS2104 (NUS Semester 1 2020-2021), written along with my teammates Ryan Tay and Ye Guoquan.
  */
 
@@ -202,7 +202,7 @@ public class OptionalTestLeftIdentity {
             else return Optional.ofNullable(null);
         });
         System.out.println(Optional.ofNullable((Integer) null).flatMap(f).equals(f.apply(null))); // false
-    }    
+    }
 }
 ```
 
@@ -211,12 +211,12 @@ public class OptionalTestLeftIdentity {
 ```java
 // Right Identity
 /**
- * Marcello La Rocca. 2016. How Optional Breaks the Monad Laws and Why It Matters. (September 2016). 
+ * Marcello La Rocca. 2016. How Optional Breaks the Monad Laws and Why It Matters. (September 2016).
  * Retrieved November 6, 2020 from https://www.sitepoint.com/how-optional-breaks-the-monad-laws-and-why-it-matters/
- * 
+ *
  * This code is referenced from Marcello La Rocca's sitepoint article.
- * 
- * This test for conformity to the Monad law of Right Identity is discussed in my Monads for the Java developer 
+ *
+ * This test for conformity to the Monad law of Right Identity is discussed in my Monads for the Java developer
  * Term Paper for CS2104 (NUS Semester 1 2020-2021), written along with my teammates Ryan Tay and Ye Guoquan.
  */
 
@@ -226,13 +226,14 @@ public class OptionalTestRightIdentity {
     public static void main(String[] args) {
         Optional<Integer> m = Optional.ofNullable(null);
         System.out.println(m.flatMap(Optional::ofNullable).equals(m)); // false
-    }    
+    }
 }
 ```
 
 [Source](https://github.com/zhixiangteoh/java-monads-report/blob/main/OptionalTestRightIdentity.java)
 
 ---
+
 {: data-content="footnotes"}
-[^1]: [Monads](https://en.wikipedia.org/wiki/Monad_(functional_programming)) are abstractions that allow programs to be structured generically. In the case of Haskell and many programming languages, monads are centered around their `bind` operator which provides allows function-chaining and provides a lot of the benefits of [functional programming](https://en.wikipedia.org/wiki/Functional_programming). See also: my report on [Functional Programming](/functional-programming-post)
+[^1]: [Monads](<https://en.wikipedia.org/wiki/Monad_(functional_programming)>) are abstractions that allow programs to be structured generically. In the case of Haskell and many programming languages, monads are centered around their `bind` operator which provides allows function-chaining and provides a lot of the benefits of [functional programming](https://en.wikipedia.org/wiki/Functional_programming). See also: my report on [Functional Programming](/functional-programming-post)
 [^2]: All monads should obey the three monad laws as elaborated [here](https://wiki.haskell.org/Monad_laws). In a nutshell, this ensures the integrity of the operations in which monads are defined upon.

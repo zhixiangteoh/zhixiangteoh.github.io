@@ -3,7 +3,7 @@ navbar_entries:
     url: about
 
   - title: experiences
-    url: "#experiences"
+    url: https://zhixiangteoh.github.io/resume
 
   - title: projects
     url: "#projects"
@@ -124,6 +124,10 @@ experience_entries:
         url: false
 
 project_entries:
+  - title: NOCAP
+    url: nocap-post
+    desc: Efficient compiler framework for precise approximation of continuous functions via lookup table generation
+
   - title: Hazel
     url: hazel-post
     desc: Undergraduate research member at the Future of Programming Lab at the University of Michigan
@@ -136,10 +140,10 @@ project_entries:
     url: slatevim-post
     desc: An online collaborative Vim document editor built with Slate.js and AWS Amplify
 
-  - title: Co-Re MERN
-    url: core-post
-    desc: Course Review website built on MERN stack with Redux authentication and Algolia search
-    highlight: WIP
+  # - title: Co-Re MERN
+  #   url: core-post
+  #   desc: Course Review website built on MERN stack with Redux authentication and Algolia search
+  #   highlight: WIP
 
   - title: eCardnomics
     url: ecardnomics-post
